@@ -61,8 +61,7 @@ public class BookListAdapter extends BaseAdapter{
         }
 
         Book b = list.get(position);
-        holder.tv.setText(b.getCatlog()+"/n"+b.getId());
-
+        holder.tv.setText(b.getCatalog() + "/n"+ b.getId());
         return convertView;
     }
 

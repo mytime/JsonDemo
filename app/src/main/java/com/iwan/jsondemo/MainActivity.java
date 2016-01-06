@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     
     
     //url对象,www.juhe.cn/docs/api/id/50
-    private String url = "http://apis.juhe.cn/goodbook/catalog?key=a2ac7f8df926e8d57cc978caOf1b12b&dtype=json";
+    private String url = "http://apis.juhe.cn/goodbook/catalog?key=2ea66be04ab0420ce486458f5cdadfd2&dtype=json";
     private ListView lv;
     private BookListAdapter adapter;
 
@@ -64,8 +64,6 @@ public class MainActivity extends AppCompatActivity {
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
-
-
             }
 
 
@@ -105,6 +103,7 @@ public class MainActivity extends AppCompatActivity {
         //集合
         Type listType = new TypeToken<ArrayList<Book>>(){
         }.getType();
+
         JSONObject object = new JSONObject(s);
 
         ArrayList<Book> books = gson.fromJson(object.getString("result"),listType);

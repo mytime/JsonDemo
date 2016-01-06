@@ -6,7 +6,15 @@ package com.iwan.jsondemo.Bean;
  */
 public class Book {
     private String id;
-    private String catlog;
+    private String catalog;
+
+    public String getCatalog() {
+        return catalog;
+    }
+
+    public void setCatalog(String catalog) {
+        this.catalog = catalog;
+    }
 
     public String getId() {
         return id;
@@ -14,13 +22,5 @@ public class Book {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    public String getCatlog() {
-        return catlog;
-    }
-
-    public void setCatlog(String catlog) {
-        this.catlog = catlog;
     }
 }
